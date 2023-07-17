@@ -7290,7 +7290,7 @@ var RaygunHelper = {};
 			var e, t, n, i, r, o, a, s = this;
 			this.apiKey = "oDTLKocShe1VREPSvMQ15Q", this.recurringError = [], e = window, t = document, n = "script", i = "rg4js", e.RaygunObject = i, e[i] = e[i] || function() {
 				(e[i].o = e[i].o || []).push(arguments)
-			}, r = t.createElement(n), o = t.getElementsByTagName(n)[0], r.async = 1, r.src = "/cdn.raygun.io/raygun4js/raygun.min.js", o.parentNode.insertBefore(r, o), a = e.onerror, e.onerror = function(t, n, r, o, s) {
+			}, r = t.createElement(n), o = t.getElementsByTagName(n)[0], r.async = 1, r.src = "raygun.min.js", o.parentNode.insertBefore(r, o), a = e.onerror, e.onerror = function(t, n, r, o, s) {
 				a && a(t, n, r, o, s), s || (s = new Error(t)), e[i].q = e[i].q || [], e[i].q.push({
 					e: s
 				})
@@ -29447,7 +29447,7 @@ var RaygunHelper = {};
 			var e, t, n, i, r, o, a, s = this;
 			this.apiKey = "oDTLKocShe1VREPSvMQ15Q", this.recurringError = [], e = window, t = document, n = "script", i = "rg4js", e.RaygunObject = i, e[i] = e[i] || function() {
 				(e[i].o = e[i].o || []).push(arguments)
-			}, r = t.createElement(n), o = t.getElementsByTagName(n)[0], r.async = 1, r.src = "/cdn.raygun.io/raygun4js/raygun.min.js", o.parentNode.insertBefore(r, o), a = e.onerror, e.onerror = function(t, n, r, o, s) {
+			}, r = t.createElement(n), o = t.getElementsByTagName(n)[0], r.async = 1, r.src = "raygun.min.js", o.parentNode.insertBefore(r, o), a = e.onerror, e.onerror = function(t, n, r, o, s) {
 				a && a(t, n, r, o, s), s || (s = new Error(t)), e[i].q = e[i].q || [], e[i].q.push({
 					e: s
 				})
