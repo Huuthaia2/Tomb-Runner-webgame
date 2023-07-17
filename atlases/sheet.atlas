@@ -1,0 +1,55 @@
+
+sheet.png
+size: 1753,747
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+developed_by.png
+  rotate: true
+  xy: 593, 1
+  size: 590, 565
+  orig: 590, 565
+  offset: 0, 0
+  index: -1
+new_record.png
+  rotate: false
+  xy: 1367, 556
+  size: 190, 190
+  orig: 190, 190
+  offset: 0, 0
+  index: -1
+paused.png
+  rotate: false
+  xy: 1160, 1
+  size: 592, 553
+  orig: 592, 553
+  offset: 0, 0
+  index: -1
+score.png
+  rotate: false
+  xy: 1, 1
+  size: 590, 633
+  orig: 590, 633
+  offset: 0, 0
+  index: -1
+select.png
+  rotate: false
+  xy: 980, 593
+  size: 385, 140
+  orig: 385, 140
+  offset: 0, 0
+  index: -1
+selected.png
+  rotate: false
+  xy: 593, 593
+  size: 300, 142
+  orig: 300, 142
+  offset: 0, 0
+  index: -1
+vierarmig_music.png
+  rotate: true
+  xy: 1559, 556
+  size: 171, 170
+  orig: 171, 170
+  offset: 0, 0
+  index: -1
