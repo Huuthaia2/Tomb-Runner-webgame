@@ -2,88 +2,119 @@
 <html>
 
 
-<!-- Mirrored from html5.gamedistribution.com/rvvASMiM/f2af2ecc05a445edb6862c589e996a7e/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 07:29:41 GMT -->
+<!-- Mirrored from games.engineering.com/tomb-runner-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jul 2023 01:30:43 GMT -->
 <head>
+    <title>Tomb Runnner-Temple Run - ENGINEERING.com | Games & Puzzles</title>
     <meta charset="UTF-8">
+    <meta name="author" content="forestrygames.com">
+    <meta name="keywords" content="forestrygames, tomb runner, forestrygames.com">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-touch-fullscreen" content="yes" />
-    <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon256.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="icon256.png">
     <meta name="HandheldFriendly" content="true" />
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" sizes="256x256" href="/icons/icon256.png">
+    <link rel="shortcut icon" sizes="256x256" href="icon256.png">
+    <script src="game.js"></script>
+    <style>
+        #container { background: #000000; width: 100%; height: 100%; }
+		
+			html, body {
+				background: #000000;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+				touch-action: none;
+				user-select: none;
+				-ms-touch-action: none;
+				-moz-user-select: none;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				-khtml-user-select: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+			
+			body {
+				overflow: hidden;
+			}
+			
+			canvas {
+				touch-action-delay: none;
+				touch-action: none;
+				-ms-touch-action: none;
+			}
 
-    <title>tomb-runner</title>
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				color: #ffffff;
+				padding: 5px;
+				font-family:Monospace;
+				font-size:13px;
+				font-weight: bold;
+				text-align:center;
+			}
 
-    <link rel="stylesheet" href="css/app.css" type="text/css" />
+			a {
+				color: #ffffff;
+			}
+		</style>
+       <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKQQG4C');</script>
+<!-- End Google Tag Manager -->
 
 </head>
 
 <body>
     <div id="container"></div>
-    <div id="loader">Loading...</div>
     <script type="text/javascript">
-        var gtag, languageDetector, platform;
-        var SpilData = {
-            id: '576742227280298086',
-            pauseGame: function() {
-                if (typeof GEMIOLI !== 'undefined' && GEMIOLI.Application)
-                    GEMIOLI.Application.dispatchEvent({
-                        type: 'blur'
-                    });
-            },
-            resumeGame: function() {
-                if (typeof GEMIOLI !== 'undefined' && GEMIOLI.Application)
-                    GEMIOLI.Application.dispatchEvent({
-                        type: 'focus'
-                    });
-            },
-            onLoad: function(callback) {
-                if (SpilData.apiInstance)
-                    callback();
-                else
-                    this.callbacks.push(callback);
-            },
-            callbacks: []
-        };
-        window.addEventListener('scroll', function() {
-            if (document.activeElement === document.body && window.scrollY > 0) {
-                document.body.scrollTop = 0;
-            }
-        }, true);
-    </script>
-    <script type="text/javascript">
-        var gameName = "tomb-runner.min.js";
-        var enableAnalytics;
-        var phaserAdProvider;
-
-
-
-        var fbrqBD = 8
-
-
-        //This all here is for cache busting;
-        function addScript(src, buster, callback) {
-            var s = document.createElement('script');
-            s.setAttribute('src', src + '?v=' + buster);
-            if (typeof callback === 'function') {
-                s.onload = callback;
-            }
-            document.body.appendChild(s);
+    var SpilData = {
+        id: '000000',
+        pauseGame: function() {
+            if (typeof GEMIOLI !== 'undefined' && GEMIOLI.Application)
+                GEMIOLI.Application.dispatchEvent({ type: 'blur' });
+        },
+        resumeGame: function() {
+            if (typeof GEMIOLI !== 'undefined' && GEMIOLI.Application)
+                GEMIOLI.Application.dispatchEvent({ type: 'focus' });
+        },
+        onLoad: function(callback) {
+            if (SpilData.apiInstance)
+                callback();
+            else
+                this.callbacks.push(callback);
+        },
+        callbacks: []
+    };
+    GameAPI.loadAPI(function(apiInstance) {
+        if (window.console && window.console.log) {
+            console.log('GameAPI version ' + apiInstance.version + ' loaded!');
         }
-
-
-        addScript('version.js', Date.now(), function() {
-
-            addScript(gameName, version, function() {});
-
-        });
+        SpilData.apiInstance = apiInstance;
+        SpilData.moreGamesAction = apiInstance.Branding.getLink('more_games').action;
+        SpilData.logoData = apiInstance.Branding.getLogo();
+        for (var i = 0; i < SpilData.callbacks.length; ++i) {
+            SpilData.callbacks[i].call(SpilData);
+        }
+        SpilData.callbacks = [];
+    }, SpilData);
+    window.addEventListener('scroll', function() {
+        if (document.activeElement === document.body && window.scrollY > 0) {
+            document.body.scrollTop = 0;
+        }
+    }, true);
     </script>
 </body>
 
 
-<!-- Mirrored from html5.gamedistribution.com/rvvASMiM/f2af2ecc05a445edb6862c589e996a7e/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 07:29:42 GMT -->
+<!-- Mirrored from games.engineering.com/tomb-runner-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jul 2023 01:30:43 GMT -->
 </html>
